@@ -5,7 +5,7 @@ body {
 }
 
 h1{
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .btn{
@@ -30,10 +30,12 @@ h1{
 }
 
 .menu {
-    background-color: gainsboro;
+    background-color: rgb(201, 194, 194);
     color: black;
     padding: 8px;
     margin: 0;
+    text-align: center;
+    font-size: 14px;
 }
 
 .menu li {
