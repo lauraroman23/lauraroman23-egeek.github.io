@@ -1,12 +1,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+    margin: 0;
 }
 
 .btn {
-    background-color: black;
-    color: white;
+    background-color:white;
+    color: black;
     border-radius: 3px;
+    padding: 8px;
 }
 
 #container {
@@ -14,12 +16,13 @@ body {
 }
 
 .menu {
-    background-color: rgba(175, 147, 147, 0.904);
+    background-color: gainsboro;
     color: black;
 }
 
 header, footer {
     background-color: black;
+    padding: 20px;
 }
 
 header h1, footer p {
