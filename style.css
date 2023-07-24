@@ -20,6 +20,10 @@ h1{
     cursor: pointer;
 }
 
+.btn a {
+    text-decoration: none;
+}
+
 #container {
     background-color: white;
     padding: 20px;
@@ -28,10 +32,16 @@ h1{
 .menu {
     background-color: gainsboro;
     color: black;
+    padding: 8px;
+    margin: 0;
 }
 
 .menu li {
     list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
 }
 
 header, footer {
