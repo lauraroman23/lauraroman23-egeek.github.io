@@ -28,7 +28,7 @@ h1{
 /* menu */
 .menu {
     background-color: rgb(201, 194, 194);
-    padding: 15px;
+    padding: 25px;
     margin: 0;
     font-size: 14px;
     list-style: none;
@@ -53,6 +53,7 @@ h1{
 
 .row{
     display: inline-block;
+    margin-top: 20px;
 }
 
 header, footer {
