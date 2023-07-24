@@ -8,6 +8,7 @@ h1{
     font-size: 24px;
 }
 
+/* botoes */
 .btn{
     background-color:white;
     color: black;
@@ -24,26 +25,37 @@ h1{
     text-decoration: none;
 }
 
+/* menu */
+.menu {
+    background-color: rgb(201, 194, 194);
+    color: #000;
+    padding: 8px;
+    margin: 0;
+    font-size: 14px;
+    list-style: none;
+}
+
+.menu li {
+    float: left;
+    display: inline;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: #000;
+}
+
+/* container */
 #container {
     background-color: white;
     padding: 20px;
 }
 
-.menu {
-    background-color: rgb(201, 194, 194);
-    color: black;
-    padding: 8px;
-    margin: 0;
-    text-align: center;
-    font-size: 14px;
-}
-
-.menu li {
-    list-style: none;
-}
-
-.menu li a{
-    text-decoration: none;
+.col{
+    display: inline-block;
 }
 
 header, footer {
@@ -55,6 +67,7 @@ header h1, footer p {
     color: white;
 }
 
+/* footer */
 footer p{
     font-size: 14px;
     text-align: center;
