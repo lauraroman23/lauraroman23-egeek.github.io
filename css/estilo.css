@@ -1,0 +1,224 @@
+/* h1 - 24px
+   h2 - 20px
+   h3 - 16px
+   p - 14 ou 14.5px
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+}
+
+h1{
+    font-size: 24px;
+    display: inline;
+}
+
+h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+header input{
+    float: right;
+    display: inline;
+    padding: 8px; 
+    border: 1px solid white;
+    border-radius: 2px; 
+    margin-left: 5px; 
+    font-size: 14px;
+    width: 20%;
+}
+
+header input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+/* botoes */
+.btn-login{
+    float: right;
+    background-color: #FFFFFF;
+    color: #000000;
+    display: inline;
+    border: 1px solid white;
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 8px;
+    letter-spacing: 1px;
+}
+
+.btn-login a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn-login a:hover, .btn2:hover{
+    cursor: pointer;
+}
+
+.btn{
+    background-color: #000000;
+    color: white;
+    border: 1px solid black;
+    padding: 8px 15px 8px 15px;
+    font-size: 14px;
+    width: 20%;
+}
+
+.btn2{
+    background-color: #000000;
+    color: white;
+    border: 1px solid black;
+    padding: 8px 15px 8px 15px;
+    font-size: 14px;
+}
+
+.btn2 a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* menu */
+.menu {
+    background-color: #D3D3D3;
+    overflow: hidden;
+}
+
+.menu a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 20px 20px;
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu a:hover, .menu a.active {
+    background-color: #A9A9A9;
+    color: white;
+}
+
+/* container */
+#container {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+.row{
+    display: inline-block;
+    padding: 20px;
+    margin-left: 45px;
+    font-size: 14.5px;
+}
+
+.row a{
+    text-decoration: none;
+}
+
+h3{
+    font-size: 16px; 
+    margin-bottom: 50px;
+}
+
+/* Descrição produto */
+.row-product {
+    display: flex;
+}
+
+.col-product-img{
+    flex: 40%;
+    /*background-color: gold;*/
+}
+
+.col-product-img img{
+    float: right;
+    margin: 20px;
+}
+
+.col-product{
+    flex: 60%;
+}
+
+.descricao{
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.descricao h3{
+    margin-bottom: 20px;
+} 
+
+.descricao p{
+    width: 70%;
+    text-align: justify;
+}
+
+#avaliacao{
+    flex: 100%;
+    margin-top: 80px;
+    /*background-color: pink;*/
+}
+
+/* footer */
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+footer p{
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+/* Paginação */
+.paginacao{
+    float: right;
+    margin-right: 140px;
+    margin-top: 35px;
+}
+
+.paginacao a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.paginacao a:hover, .paginacao a.active {
+    background-color: #A9A9A9;
+    color: white;
+}
+
+/* form */
+form{
+    margin: 155px; 
+    text-align: center;
+}
+
+form input{
+    font-size: 14px;
+    margin: 15px;
+    width: 20%;
+}
+
+input[type="email"], input[type="password"]{
+    padding: 5px;
+}
+
+.icon{
+    display: inline;
+    float: right;
+    height: 34px;
+    width: 40px;
+    margin-left: 3px;
+    cursor: pointer;
+}
