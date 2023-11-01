@@ -141,6 +141,7 @@ h3{
 .col-product-img img{
     float: right;
     margin: 20px;
+    border-radius: 2px;
 }
 
 .col-product{
@@ -214,6 +215,7 @@ input[type="email"], input[type="password"]{
     padding: 5px;
 }
 
+/* ícone de carrinho */
 .icon{
     display: inline;
     float: right;
@@ -221,4 +223,16 @@ input[type="email"], input[type="password"]{
     width: 40px;
     margin-left: 3px;
     cursor: pointer;
+}
+
+.items{
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    float: right;
+    color: white;
+    padding: 2px 7px;
+    border-radius: 50%;
+    background: red;
+    font-size: 15px;
 }
