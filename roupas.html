@@ -5,18 +5,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/estilo.css" rel="stylesheet"/>
+        <link href="css/responsive.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
 
        <header>
             <h1><a href="index.html">E-geek</a></h1>
             
-            <a href="add_carrinho.html">
+           <a href="add_carrinho.html">
                 <img src="img/icon.jpg" alt="ícone carrinho de compras" class="icon">
                 <span class="items">3</span>
             </a>
 
-            <input type="search" placeholder="Buscar">
+             <input type="search" placeholder="Buscar" class="busca">
 
             <button class="btn-login"><a href="login.html">Login</a></button>
         </header>
@@ -24,37 +26,42 @@
         <!--Menu-->
         <div class="menu">
             <a href="index.html">Home</a>
-            <a href="roupas.html" class="active">Roupas</a>
-            <a href="acessorios.html">Acessórios</a>
-            <a href="bonecos.html">Bonecos colecionáveis</a>
-            <a href="capa_cel.html">Capas de Celular</a>
-            <a href="hqs_jogos.html">Quadrinhos e Jogos</a>
-            <a href="canecas.html">Canecas</a>
+            <div id="links">
+                <a href="roupas.html" class="active">Roupas</a>
+                <a href="acessorios.html">Acessórios</a>
+                <a href="bonecos.html">Bonecos colecionáveis</a>
+                <a href="capa_cel.html">Capas de Celular</a>
+                <a href="hqs_jogos.html">Quadrinhos e Jogos</a>
+                <a href="canecas.html">Canecas</a>
+            </div>
+            <a href="javascript:void(0);" class="mobile" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
 
         <div id="container">
             <h3>Roupas</h3>
             <div class="col">
                 <div class="row">
-                    <img src="img/img.jpg" alt="Camiseta Joker" width='200' height='200'> 
+                    <img src="img/camisetas/camiseta-joker.jpg" alt="Camiseta Joker" width='200' height='200'> 
                     <p>Camiseta do Coringa</p>
                     <p>R$60,00</p>
                 </div>
 
                 <div class="row">
-                    <img src="img/img.jpg" alt="Moletom Mulher Maravilha" width='200' height='200'>
+                    <img src="img/camisetas/camiseta-ww.jpg" alt="Moletom Mulher Maravilha" width='200' height='200'>
                     <p>Moletom da Mulher Maravilha</p>
                     <p>R$60,99</p>
                 </div>
 
                 <div class="row">
-                    <img src="img/img.jpg" alt="Camiseta Star Wars" width='200' height='200'>
+                    <img src="img/camisetas/camiseta-sw.jpg" alt="Camiseta Star Wars" width='200' height='200'>
                     <p>Camiseta Star Wars</p>
                     <p>R$40,99</p>
                 </div>
 
                 <div class="row">
-                    <img src="img/img.jpg" alt="Camiseta HP Hogwarts" width='200' height='200'>
+                    <img src="img/camiseta-hp.jpg" alt="Camiseta HP Hogwarts" width='200' height='200'>
                     <p>Camiseta Harry Potter</p>
                     <p>R$57,99</p>
                 </div>
@@ -62,36 +69,36 @@
 
             <div class="col">
                 <div class="row">
-                    <img src="img/img.jpg" alt="Camiseta Friends" width='200' height='200'>
+                    <img src="img/camisetas/camiseta-friends.jpg" alt="Camiseta Friends" width='200' height='200'>
                     <p>Camiseta Friends</p>
                     <p>R$55,00</p>
                 </div>
 
                 <div class="row">
-                    <img src="img/img.jpg" alt="Camiseta Simpsons" width='200' height='200'>
+                    <img src="img/camisetas/camiseta-simpsons.jpg" alt="Camiseta Simpsons" width='200' height='200'>
                     <p>Camiseta Omero Simpsons</p>
                     <p>R$48,99</p>
                 </div>
 
                 <div class="row">
-                    <img src="img/img.jpg" alt="Moletom Loki" width='200' height='200'>
+                    <img src="img/camisetas/camiseta-loki.jpg" alt="Moletom Loki" width='200' height='200'>
                     <p>Moletom Loki</p>
                     <p>R$80,00</p>
                 </div>
 
                 <div class="row">
-                    <img src="img/img.jpg" alt="Moleton CA" width='200' height='200'>
+                    <img src="img/camisetas/camiseta-ca.jpg" alt="Moleton CA" width='200' height='200'>
                     <p>Moletom Capitão América</p>
                     <p>R$75,99</p>
                 </div>
             </div>
 
-            <section class="paginacao">
-                <a href="#">&laquo;</a>
-                <a href="#" class="active">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">&raquo;</a>
+             <section class="paginacao">
+                <a href="#" class="previous">&laquo;</a>
+                <a href="index.html" class="active">1</a>
+                <a href="index2.html">2</a>
+                <a href="index3.html">3</a>
+                <a href="#" class="next">&raquo;</a>
             </section>
         </div>
 
@@ -99,5 +106,7 @@
             <p>Copyright @ 2023 | E-geek</p>
         </footer>
 
+        <script src="js/menu_function.js"></script>
+        <script src="js/busca.js"></script>
     </body>
 </html>

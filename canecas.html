@@ -5,56 +5,63 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/estilo.css" rel="stylesheet"/>
+         <link href="css/responsive.css" rel="stylesheet"/>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
 
         <header>
             <h1><a href="index.html">E-geek</a></h1>
             
-            <a href="add_carrinho.html">
+           <a href="add_carrinho.html">
                 <img src="img/icon.jpg" alt="ícone carrinho de compras" class="icon">
                 <span class="items">3</span>
             </a>
 
-            <input type="search" placeholder="Buscar">
+            <input type="search" placeholder="Buscar" class="busca">
 
             <button class="btn-login"><a href="login.html">Login</a></button>
         </header>
 
-        <!--Menu-->
+         <!--Menu-->
         <div class="menu">
             <a href="index.html">Home</a>
-            <a href="roupas.html">Roupas</a>
-            <a href="acessorios.html">Acessórios</a>
-            <a href="bonecos.html">Bonecos colecionáveis</a>
-            <a href="capa_cel.html">Capas de Celular</a>
-            <a href="hqs_jogos.html">Quadrinhos e Jogos</a>
-            <a href="canecas.html" class="active">Canecas</a>
+            <div id="links">
+                <a href="roupas.html">Roupas</a>
+                <a href="acessorios.html">Acessórios</a>
+                <a href="bonecos.html">Bonecos colecionáveis</a>
+                <a href="capa_cel.html">Capas de Celular</a>
+                <a href="hqs_jogos.html">Quadrinhos e Jogos</a>
+                <a href="canecas.html" class="active">Canecas</a>
+            </div>
+            <a href="javascript:void(0);" class="mobile" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
 
         <div id="container">
             <h3>Canecas</h3>
             <div class="col">
                 <div class="row">
-                    <img src="img/img.jpg" alt="Caneca Star Wars" width='200' height='200'> 
+                    <img src="img/caneca-sw.jpg" alt="Caneca Star Wars" width='200' height='200'> 
                     <p>Caneca Star Wars C3PO</p>
                     <p>R$12,00</p>
                 </div>
 
                 <div class="row">
-                    <img src="img/img.jpg" alt="Caneca Capitã Marvel" width='200' height='200'>
+                    <img src="img/canecas/caneca-cm.jpg" alt="Caneca Capitã Marvel" width='200' height='200'>
                     <p>Caneca Capitã Marvel</p>
                     <p>R$14,90</p>
                 </div>
 
                 <div class="row">
-                    <img src="img/img.jpg" alt="Caneca Harry Potter" width='200' height='200'>
+                    <img src="img/canecas/caneca-hp.jpg" alt="Caneca Harry Potter" width='200' height='200'>
                     <p>Caneca Harry Potter</p>
                     <p>R$17,99</p>
                 </div>
 
                 <div class="row">
-                    <img src="img/img.jpg" alt="Caneca homem-aranha" width='200' height='200'>
+                    <img src="img/canecas/caneca-miranha.jpg" alt="Caneca homem-aranha" width='200' height='200'>
                     <p>Caneca Homem-aranha</p>
                     <p>R$20,00</p>
                 </div>
@@ -62,41 +69,44 @@
 
             <div class="col">
                 <div class="row">
-                    <img src="img/img.jpg" alt="Caneca pequena sereia" width='200' height='200'>
+                    <img src="img/canecas/caneca-ariel.jpg" alt="Caneca pequena sereia" width='200' height='200'>
                     <p>Caneca Pequena Sereia</p>
                     <p>R$10,90</p>
                 </div>
 
                 <div class="row">
-                    <img src="img/img.jpg" alt="Caneca mulher maravilha" width='200' height='200'>
+                    <img src="img/canecas/caneca-ww.jpg" alt="Caneca mulher maravilha" width='200' height='200'>
                     <p>Caneca Mulher Maravilha</p>
                     <p>R$15,99</p>
                 </div>
 
                 <div class="row">
-                    <img src="img/img.jpg" alt="Caneca Stormtropper" width='200' height='200'>
+                    <img src="img/canecas/caneca-stormtrooper.jpg" alt="Caneca Stormtropper" width='200' height='200'>
                     <p>Caneca Stormtrooper</p>
                     <p>R$20,99</p>
                 </div>
 
                 <div class="row">
-                    <img src="img/img.jpg" alt="Caneca Wandinha" width='200' height='200'>
+                    <img src="img/caneca-wandinha.jpg" alt="Caneca Wandinha" width='200' height='200'>
                     <p>Caneca Wandinha</p>
                     <p>R$20,00</p>
                 </div>
             </div>
 
-             <section class="paginacao">
-                <a href="#">&laquo;</a>
-                <a href="#" class="active">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">&raquo;</a>
+            <section class="paginacao">
+                <a href="#" class="previous">&laquo;</a>
+                <a href="index.html" class="active">1</a>
+                <a href="index2.html">2</a>
+                <a href="index3.html">3</a>
+                <a href="#" class="next">&raquo;</a>
             </section>
         </div>
 
         <footer>
             <p>Copyright @ 2023 | E-geek</p>
         </footer>
+
+        <script src="js/menu_function.js"></script>
+        <script src="js/busca.js"></script>
     </body>
 </html>

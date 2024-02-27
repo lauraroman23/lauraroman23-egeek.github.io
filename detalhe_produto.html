@@ -5,12 +5,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/estilo.css" rel="stylesheet"/>
+        <link href="css/responsive.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
             <h1><a href="index.html">E-geek</a></h1>
             
-           <a href="add_carrinho.html">
+          <a href="add_carrinho.html">
                 <img src="img/icon.jpg" alt="ícone carrinho de compras" class="icon">
                 <span class="items">3</span>
             </a>
@@ -22,24 +24,29 @@
 
         <!--Menu-->
         <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="roupas.html">Roupas</a>
-            <a href="acessorios.html">Acessórios</a>
-            <a href="bonecos.html">Bonecos colecionáveis</a>
-            <a href="capa_cel.html">Capas de Celular</a>
-            <a href="hqs_jogos.html">Quadrinhos e Jogos</a>
-            <a href="canecas.html">Canecas</a>
+            <a href="index.html" class="active">Home</a>
+            <div id="links">
+                <a href="roupas.html">Roupas</a>
+                <a href="acessorios.html">Acessórios</a>
+                <a href="bonecos.html">Bonecos colecionáveis</a>
+                <a href="capa_cel.html">Capas de Celular</a>
+                <a href="hqs_jogos.html">Quadrinhos e Jogos</a>
+                <a href="canecas.html">Canecas</a>
+            </div>
+            <a href="javascript:void(0);" class="mobile" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
 
         <div id="container">
             <div class="row-product">
                 <div class="col-product-img">
-                    <img src="img/img.jpg" alt="Caneca Star Wars" height="350" width="350">
+                    <img src="img/caneca-sw.jpg" alt="Caneca Star Wars" height="350" width="350">
                 </div>
                 <div class="col-product">
                     <div class="descricao">
-                        <h3 style="font-size: 18px;">Caneca Star Wars C3PO</h3>
-                        <p>R$12,00</p><br>
+                        <h3>Caneca Star Wars C3PO</h3>
+                        <p class="value">R$12,00</p><br>
                         <p>Descrição: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. 
                             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac 
@@ -49,10 +56,27 @@
                     </div>
                 </div>
             </div>
+
+            <!--<section id="avaliacao">
+                <h3 style="font-size: 18px;">Avaliações</h3>
+                <div>
+                    <p>Nome usuário</p>
+                    <p>Data publicação</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. 
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac 
+                        turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, 
+                        posuere eu, lectus. Nam mattis, felis ut adipiscing.
+                    </p>
+                    <p>Estrelas</p>
+                </div>
+            </section>-->
         </div>
 
         <footer>
             <p>Copyright @ 2023 | E-geek</p>
         </footer>
+        
+        <script src="js/menu_function.js"></script>
     </body>
 </html>
